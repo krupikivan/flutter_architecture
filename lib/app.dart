@@ -1,6 +1,7 @@
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture/logic/internet/internet.dart';
+import 'package:flutter_architecture/utils/locale.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_architecture/auth_repository.dart';
 import 'package:flutter_architecture/user_repository.dart';
@@ -67,6 +68,11 @@ class AppView extends StatelessWidget {
         navigatorKey: _navigatorKey,
         debugShowCheckedModeBanner: false,
         theme: AppTheme.theme,
+        supportedLocales: [
+          Locale('en', 'US'),
+          Locale('es', 'AR'),
+        ],
+        localizationsDelegates: localizationsDelegates,
         builder: (context, child) {
           return BlocListener<AuthBloc, AuthState>(
             listener: (context, state) {

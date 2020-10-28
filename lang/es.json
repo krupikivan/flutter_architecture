@@ -1,0 +1,8 @@
+{
+    "passwordError": "La contrasena debe contener 8 caracteres alfanumericos con una mayuscula y numeros",
+    "logout": "Cerrar Sesion",
+    "login": "Iniciar Sesion",
+    "username": "usuario",
+    "password": "contrasena",
+    "invalidUsernam": "Usuario invalido"
+}

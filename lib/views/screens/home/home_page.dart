@@ -1,4 +1,5 @@
 import 'package:flutter_architecture/logic/auth/auth.dart';
+import 'package:flutter_architecture/utils/locale.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +28,7 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 context.bloc<AuthBloc>().add(AuthLogoutRequested());
               },
-              child: const Text('Logout'),
+              child: Text(I18n.of(context).msg('logout')),
             ),
           ],
         ),

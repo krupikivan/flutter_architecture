@@ -1,0 +1,8 @@
+{
+    "passwordError": "Password must contain at least 8 alphanumeric with uppercase letter",
+    "logout": "Logout",
+    "login": "Login",
+    "username": "username",
+    "password": "password",
+    "invalidUsernam": "Invalid username"
+}

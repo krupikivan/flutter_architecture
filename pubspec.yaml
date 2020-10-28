@@ -19,12 +19,16 @@ version: 1.0.0+1
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
-
+  
+  
 dependencies:
   flutter:
     sdk: flutter
-
-  # Architecture - State management
+  
+  flutter_localizations:
+    sdk: flutter
+  
+    # Architecture - State management
   bloc: ^6.1.0
   flutter_bloc: ^6.0.6
   
@@ -52,13 +56,21 @@ dependencies:
   user_repository:
     path: packages/user_repository
 
+  
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  # intl_translation: ^0.17.10+1
+  
 flutter:
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
+  assets:
+    - lang/en.json
+    - lang/es.json
+
+    # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

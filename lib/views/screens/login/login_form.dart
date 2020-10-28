@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_architecture/utils/locale.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:formz/formz.dart';
 import 'package:flutter_architecture/logic/login/login.dart';
@@ -44,8 +45,10 @@ class _UsernameInput extends StatelessWidget {
           onChanged: (username) =>
               context.bloc<LoginBloc>().add(LoginUsernameChanged(username)),
           decoration: InputDecoration(
-            labelText: 'username',
-            errorText: state.username.invalid ? 'invalid username' : null,
+            labelText: I18n.of(context).msg('username'),
+            errorText: state.username.invalid
+                ? I18n.of(context).msg('invalidUsername')
+                : null,
           ),
         );
       },
@@ -65,8 +68,10 @@ class _PasswordInput extends StatelessWidget {
               context.bloc<LoginBloc>().add(LoginPasswordChanged(password)),
           obscureText: true,
           decoration: InputDecoration(
-            labelText: 'password',
-            errorText: state.password.invalid ? 'invalid password' : null,
+            labelText: I18n.of(context).msg('password'),
+            errorText: state.password.invalid
+                ? I18n.of(context).msg('passwordError')
+                : null,
           ),
         );
       },
@@ -84,7 +89,7 @@ class _LoginButton extends StatelessWidget {
             ? const CircularProgressIndicator()
             : RaisedButton(
                 key: const Key('loginForm_continue_raisedButton'),
-                child: const Text('Login'),
+                child: Text(I18n.of(context).msg('login')),
                 onPressed: state.status.isValidated
                     ? () {
                         context.bloc<LoginBloc>().add(const LoginSubmitted());
