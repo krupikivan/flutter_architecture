@@ -1,9 +1,9 @@
-# Flutter Architecutr base project
+# Flutter Architecture base project
 
 
 ## Effective Dart Style
 
-See more detais about dart style sheet at:
+See more details about dart style sheet at:
 
 - [Efective dart style sheet](https://dart.dev/guides/language/effective-dart/style)
 
@@ -11,6 +11,10 @@ See more detais about dart style sheet at:
 
 ## State management
 
-The entire state management is provide by Bloc
+The entire state management is provide by Bloc 6.0
 
 - [Check this video to see more](https://www.youtube.com/watch?v=_7Mh66FFSNg)
+
+## Git
+
+- Please work in a different branch and make a pull request when finished your feature.  
