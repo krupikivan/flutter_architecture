@@ -18,3 +18,5 @@ The entire state management is provide by Bloc 6.0
 ## Git
 
 - Please work in a different branch and make a pull request when finished your feature.  
+
+- Create commit messages related as you worked into
