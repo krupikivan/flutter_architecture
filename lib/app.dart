@@ -1,8 +1,8 @@
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_architecture/logic/internet/internet.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_architecture/auth_repository.dart';
-import 'package:flutter_architecture/logic/internet/internet_cubit.dart';
 import 'package:flutter_architecture/user_repository.dart';
 import 'constants/enums.dart';
 import 'data/models/routes.dart';
