@@ -35,6 +35,8 @@ linter:
     # Util casses are awesome!
     avoid_classes_with_only_static_members: false
 
+    referenced_before_declaration: true
+
     unnecessary_new: true
 
 analyzer:

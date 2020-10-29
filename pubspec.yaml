@@ -50,7 +50,8 @@ dependencies:
   
   # API
   http: ^0.12.2
-
+  dio: ^3.0.10
+  
   auth_repository:
     path: packages/auth_repository
   user_repository:
